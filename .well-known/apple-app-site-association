@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "J36GA7P9UM.com.glowpet.ios",
+        "paths": [
+          "/auth-callback*"
+        ]
+      }
+    ]
+  }
+}
