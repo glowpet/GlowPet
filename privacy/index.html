@@ -145,9 +145,10 @@
             <p>GlowPet uses third-party AI services to power its core features. All AI requests are routed through our secure backend (Supabase Edge Functions) — no third-party API keys or direct connections exist on your device. The app requests your explicit consent before any data is shared with these services.</p>
 
             <h3>Third-Party AI Providers</h3>
+            <p>Face scanning and scoring is performed entirely on your device using Apple ARKit and MediaPipe. No face photos are sent to external services for analysis.</p>
+            <p>The following third-party AI services are used for specific features:</p>
             <ul>
-                <li><strong>OpenAI (GPT-4o):</strong> Receives your front and side face photos to perform facial analysis, scoring, and generate personalised tips. Photos are sent only when you initiate a face scan.</li>
-                <li><strong>Google Gemini (via OpenRouter):</strong> Receives structured face analysis data (face shape, proportion scores, skin attributes — not photos) to generate personalised skincare routine recommendations.</li>
+                <li><strong>Google Gemini (via OpenRouter):</strong> Receives structured face analysis data (face shape, proportion scores, skin attributes — not photos) to generate personalised skincare routine recommendations and tips.</li>
                 <li><strong>fal.ai:</strong> Receives your face photo to generate hairstyle and eyebrow visualisations. Photos are sent only when you explicitly request a visualisation.</li>
             </ul>
 
@@ -176,8 +177,7 @@
             <h2>5. Data Sharing</h2>
             <p>We do <strong>not</strong> sell your personal data. We share data only in these limited circumstances:</p>
             <ul>
-                <li><strong>OpenAI:</strong> Face photos are sent for AI analysis and scoring when you perform a face scan.</li>
-                <li><strong>Google Gemini (via OpenRouter):</strong> Structured face measurements (not photos) are sent for skincare routine generation.</li>
+                <li><strong>Google Gemini (via OpenRouter):</strong> Structured face measurements (not photos) are sent for skincare routine generation and personalised tips.</li>
                 <li><strong>fal.ai:</strong> Face photos are sent for hairstyle and eyebrow visualisation when you request one.</li>
                 <li><strong>Payment processing:</strong> Subscription purchases are handled by Apple through the App Store. We do not receive or store your payment details.</li>
                 <li><strong>Legal requirements:</strong> We may disclose data if required by law or to protect our legal rights.</li>
