@@ -99,7 +99,7 @@
 
         <div class="content">
             <h1>Privacy Policy</h1>
-            <p class="effective-date">Effective date: February 22, 2025</p>
+            <p class="effective-date">Effective date: March 7, 2026</p>
 
             <div class="highlight-box">
                 <p><strong>Summary:</strong> GlowPet processes your face photos to provide skincare analysis and visualisations. Your photos are processed on-device and through secure servers, never sold to third parties, and you can delete your data at any time.</p>
@@ -141,13 +141,28 @@
                 <li>Improve the app's features and accuracy</li>
             </ul>
 
-            <h2>3. AI Processing</h2>
-            <p>When you use AI-powered features (hairstyle recommendation, eyebrow generation, personalised plans), your data is processed through secure server-side functions. Specifically:</p>
+            <h2>3. AI Processing &amp; Third-Party AI Services</h2>
+            <p>GlowPet uses third-party AI services to power its core features. All AI requests are routed through our secure backend (Supabase Edge Functions) — no third-party API keys or direct connections exist on your device. The app requests your explicit consent before any data is shared with these services.</p>
+
+            <h3>Third-Party AI Providers</h3>
             <ul>
-                <li>Face shape and measurement data (not raw photos) are sent to generate text prompts</li>
-                <li>Photos are sent to image generation services only when you explicitly request a visualisation</li>
-                <li>AI providers process data according to their privacy policies and do not use your data for training</li>
-                <li>Generated images are returned to your device and stored in your account</li>
+                <li><strong>OpenAI (GPT-4o):</strong> Receives your front and side face photos to perform facial analysis, scoring, and generate personalised tips. Photos are sent only when you initiate a face scan.</li>
+                <li><strong>Google Gemini (via OpenRouter):</strong> Receives structured face analysis data (face shape, proportion scores, skin attributes — not photos) to generate personalised skincare routine recommendations.</li>
+                <li><strong>fal.ai:</strong> Receives your face photo to generate hairstyle and eyebrow visualisations. Photos are sent only when you explicitly request a visualisation.</li>
+            </ul>
+
+            <h3>Data Handling by AI Providers</h3>
+            <ul>
+                <li>Data is sent solely to fulfil your specific request and is not retained by providers beyond processing.</li>
+                <li>Your data is not used by these providers to train their AI models.</li>
+                <li>Each provider processes data in accordance with their own privacy policies and provides protection equivalent to ours.</li>
+                <li>Generated results are returned to your device and stored in your account.</li>
+            </ul>
+
+            <h3>Your Control</h3>
+            <ul>
+                <li>The app asks for your explicit consent before sending any data to third-party AI services.</li>
+                <li>You can revoke AI data-sharing consent at any time in Settings → Privacy. AI-powered features will be disabled until you re-consent.</li>
             </ul>
 
             <h2>4. Data Storage &amp; Security</h2>
@@ -161,16 +176,20 @@
             <h2>5. Data Sharing</h2>
             <p>We do <strong>not</strong> sell your personal data. We share data only in these limited circumstances:</p>
             <ul>
-                <li><strong>AI service providers:</strong> Photos and face shape data are sent to AI providers solely to generate your requested visualisations.</li>
+                <li><strong>OpenAI:</strong> Face photos are sent for AI analysis and scoring when you perform a face scan.</li>
+                <li><strong>Google Gemini (via OpenRouter):</strong> Structured face measurements (not photos) are sent for skincare routine generation.</li>
+                <li><strong>fal.ai:</strong> Face photos are sent for hairstyle and eyebrow visualisation when you request one.</li>
                 <li><strong>Payment processing:</strong> Subscription purchases are handled by Apple through the App Store. We do not receive or store your payment details.</li>
                 <li><strong>Legal requirements:</strong> We may disclose data if required by law or to protect our legal rights.</li>
             </ul>
+            <p>All third-party AI providers listed above process your data solely to fulfil your request, do not use it for model training, and provide data protection equivalent to ours. No data is shared for advertising or marketing purposes.</p>
 
             <h2>6. Your Rights &amp; Choices</h2>
             <ul>
                 <li><strong>Access:</strong> You can view all your data within the app.</li>
                 <li><strong>Export:</strong> Request a copy of your data by emailing <a href="mailto:glowpetapp@outlook.com">glowpetapp@outlook.com</a>.</li>
                 <li><strong>Deletion:</strong> You can delete your account and all associated data from the app settings, or by contacting us.</li>
+                <li><strong>AI data sharing:</strong> You can revoke consent for AI data sharing at any time in Settings → Privacy. AI-powered features will be disabled until you re-consent.</li>
                 <li><strong>Camera access:</strong> You can revoke camera permission at any time in your device settings.</li>
                 <li><strong>Photo access:</strong> Photo library access is requested only when you choose to use a custom photo.</li>
             </ul>
